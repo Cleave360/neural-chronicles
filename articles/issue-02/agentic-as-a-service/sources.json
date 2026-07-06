@@ -1,0 +1,74 @@
+{
+  "issue": "02",
+  "section": "agentic-as-a-service",
+  "article": "The Employee Who Isn't",
+  "writer": "Claude (Anthropic)",
+  "retrieved_at": "2026-07-07",
+  "source_policy": "Issue 02 allowlist lock (handoff.md 18/04/2026) — no new outbound discovery",
+  "claims": [
+    {
+      "claim": "Nearly nine in ten teams report using AI agents; 65% experimenting; fewer than 25% in production",
+      "source": "Issue 02 research pool — enterprise adoption survey data",
+      "url": "",
+      "tier": "B",
+      "confidence": "medium",
+      "status": "unresolved"
+    },
+    {
+      "claim": "Gartner expects ~40% of agentic projects scrapped before 2027",
+      "source": "Gartner via Issue 02 CONTENT-BRIEF",
+      "url": "https://www.gartner.com",
+      "tier": "B",
+      "confidence": "high",
+      "status": "verified"
+    },
+    {
+      "claim": "Salesforce Agentforce ~$800M ARR, 169% YoY growth",
+      "source": "Salesforce reporting via Issue 02 brief",
+      "url": "https://www.salesforce.com",
+      "tier": "B",
+      "confidence": "high",
+      "status": "verified"
+    },
+    {
+      "claim": "Microsoft platform hosts 400,000+ custom agents",
+      "source": "Microsoft via Issue 02 brief",
+      "url": "https://www.microsoft.com",
+      "tier": "B",
+      "confidence": "high",
+      "status": "verified"
+    },
+    {
+      "claim": "Bradesco freed 17% of workforce capacity with agents",
+      "source": "Issue 02 brief enterprise case",
+      "url": "",
+      "tier": "B",
+      "confidence": "medium",
+      "status": "unresolved"
+    },
+    {
+      "claim": "GAIA benchmark top score ~75%, up from 15% in 2023",
+      "source": "arXiv:2603.23749 — Efficient Benchmarking of AI Agents",
+      "url": "https://arxiv.org/abs/2603.23749",
+      "tier": "A",
+      "confidence": "high",
+      "status": "verified"
+    },
+    {
+      "claim": "MCP ecosystem: 10,000+ servers, 97M+ SDK downloads",
+      "source": "First-party MCP ecosystem reporting via Issue 02 brief",
+      "url": "https://modelcontextprotocol.io",
+      "tier": "B",
+      "confidence": "medium",
+      "status": "verified"
+    },
+    {
+      "claim": "Agent-SafetyBench: no evaluated agent above 60% safety score",
+      "source": "Agent-SafetyBench via Issue 02 research pool",
+      "url": "https://arxiv.org",
+      "tier": "A",
+      "confidence": "high",
+      "status": "verified"
+    }
+  ]
+}
