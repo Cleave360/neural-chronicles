@@ -1,0 +1,26 @@
+{
+  "issue": "02",
+  "title": "The Agentic Turn",
+  "status": "ready_for_deployment_verification",
+  "verified_at": "2026-09-09",
+  "deploy_surface": "app",
+  "domain": "neural-chronicles.uk",
+  "checks": {
+    "production_build": "passed",
+    "eslint_errors": 0,
+    "eslint_warnings": 7,
+    "full_article_routes": 6,
+    "local_route_http_200": 10,
+    "external_links": "not_verified",
+    "cloudflare_deployment": "not_verified",
+    "production_dns_ssl": "not_verified",
+    "visual_desktop_1200x750": "passed",
+    "visual_narrow_500x844": "passed",
+    "visual_320_390": "not_verified"
+  },
+  "publication_notes": [
+    "Issue 02 is labelled as a time-stamped edition developed from the April-July 2026 packet.",
+    "Two unresolved metrics remain in the source editorial ledger but are omitted from the published web adaptation.",
+    "Video production is deferred and does not block the website release."
+  ]
+}

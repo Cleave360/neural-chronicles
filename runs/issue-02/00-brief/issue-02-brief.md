@@ -1,4 +1,4 @@
-# Neural Chronicals Issue 02 Discovery Brief
+# Neural Chronicles Issue 02 Discovery Brief
 
 **Issue**: 02  
 **Theme**: The Agentic Turn  
@@ -38,7 +38,7 @@ The transition from prompt-response tools to autonomous systems that plan, execu
 
 ## Editorial Structure
 
-This issue follows the established Neural Chronicals format:
+This issue follows the established Neural Chronicles format:
 
 1. **The Latest Pulse** — Signal detection and trend summary
 2. **Architects of Tomorrow** — Deep-dive technical storytelling

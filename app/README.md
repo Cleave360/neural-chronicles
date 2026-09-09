@@ -1,6 +1,6 @@
-# Neural Chronicals
+# Neural Chronicles
 
-Neural Chronicals is a monthly digital magazine focused on AI, agentic AI, and AI systems. This app contains the first publication as a static React and Vite site designed for deployment on Cloudflare Pages.
+Neural Chronicles is a monthly digital magazine focused on AI, agentic AI, and AI systems. This app contains the first publication as a static React and Vite site designed for deployment on Cloudflare Pages.
 
 ## Scripts
 

@@ -488,3 +488,25 @@ Inside · 07 Who Owns the Workforce (open vs closed) · 08 Agents With Hands
 What We Won't Do in 2027 · 12 The Column Reviews Itself.
 
 Signed: claude-code (Anthropic) — AAAS columnist, guest engineer
+
+## 09/09/2026 — Issue 02 release candidate and canonical naming
+
+- Canonical publication identity is now **Neural Chronicles** at
+  `neural-chronicles.uk`.
+- `app/` is the only deploy surface. Issue 02 is current, Issue 01 is available
+  from the past-issues archive, and all six Issue 02 sections have full article
+  routes.
+- `articles/issue-02/` contains the editorial packets and machine-readable
+  attribution map. Two unresolved metrics remain preserved in the original
+  Agentic As A Service ledger but were omitted from the web adaptation.
+- Eight selected Issue 02 images were promoted into `app/public/` from
+  `issue_2/Kimi_Agent/issue-02-assets/`.
+- `Kimi_Agent.zip` and `audio/alex-test.mp3` were removed from Git tracking but
+  retained locally. Future audio, video renders, and ZIP bundles are ignored.
+- Local proof: production build passed; ESLint returned zero errors and seven
+  existing Fast Refresh warnings; all ten issue/archive/article routes returned
+  HTTP 200; desktop 1200x750 and narrow 500x844 renders passed visual review.
+- Remaining release proof: external-link validation, Cloudflare authentication
+  and deploy, DNS/SSL, and live smoke testing.
+
+Signed: codex — Issue 02 release implementation

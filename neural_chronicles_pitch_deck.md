@@ -1,9 +1,9 @@
-# NEURAL CHRONICALS
+# NEURAL CHRONICLES
 ## Investor & Partner Pitch Deck
 ### The AI Magazine Curated by AI
 
-**Publication:** [neural-chronicals.uk](https://neural-chronicals.uk)
-**Contact:** team@neural-chronicals.uk
+**Publication:** [neural-chronicles.uk](https://neural-chronicles.uk)
+**Contact:** team@neural-chronicles.uk
 **Produced by:** Kindred AI / Kindred Systems
 **Date:** March 2026
 
@@ -11,9 +11,9 @@
 
 ## 01 — Executive Summary
 
-Neural Chronicals is a 12-issue digital magazine covering the frontier of artificial intelligence — curated, produced, and delivered by AI agents in collaboration with Kindred AI.
+Neural Chronicles is a 12-issue digital magazine covering the frontier of artificial intelligence — curated, produced, and delivered by AI agents in collaboration with Kindred AI.
 
-Unlike traditional tech media, Neural Chronicals is an AI-native publication: every section is shaped by machine intelligence, every issue surfaces what matters most in AI — not through algorithmic feeds, but through editorial craft delivered at machine scale.
+Unlike traditional tech media, Neural Chronicles is an AI-native publication: every section is shaped by machine intelligence, every issue surfaces what matters most in AI — not through algorithmic feeds, but through editorial craft delivered at machine scale.
 
 **Issue 01 is live.** The platform is built, deployed, and running on Cloudflare's global edge network.
 
@@ -34,7 +34,7 @@ The result: the most important AI story of the week is buried under noise.
 
 ## 03 — The Solution
 
-**Neural Chronicals** is the world's first AI-curated digital magazine for the AI frontier.
+**Neural Chronicles** is the world's first AI-curated digital magazine for the AI frontier.
 
 - Curated by **Kindred AI agents** — not human editors reactively sifting feeds
 - Six core editorial verticals covering the full AI landscape
@@ -84,7 +84,7 @@ The 12-issue calendar forms a structured narrative arc across the year, with eac
 
 ## 06 — Technology & Infrastructure
 
-Neural Chronicals is built on a modern, scalable web stack with zero operational overhead.
+Neural Chronicles is built on a modern, scalable web stack with zero operational overhead.
 
 - **Frontend**: React 19, TypeScript 5.9, Vite 7, Tailwind CSS
 - **Hosting**: Cloudflare Workers with global edge delivery (<50ms TTFB worldwide)
@@ -115,7 +115,7 @@ This pipeline compresses a traditional monthly editorial workflow from **6 weeks
 
 ## 08 — Target Audience
 
-Neural Chronicals is written for three overlapping audiences:
+Neural Chronicles is written for three overlapping audiences:
 
 **AI Practitioners** — engineers, researchers, and product managers building with AI tools daily. They need depth, not hype.
 
@@ -129,11 +129,11 @@ Neural Chronicals is written for three overlapping audiences:
 
 ## 09 — Business Model
 
-Neural Chronicals launches free and open, building audience before monetisation. Monetisation follows audience proof.
+Neural Chronicles launches free and open, building audience before monetisation. Monetisation follows audience proof.
 
 ### Phase 1 — Audience (Issues 01–04)
 - Free access, no paywall
-- Email list growth via `kindred@neural-chronicals.uk`
+- Email list growth via `kindred@neural-chronicles.uk`
 - SEO-indexed issues building domain authority
 - Social and community built around each issue
 
@@ -154,13 +154,13 @@ Neural Chronicals launches free and open, building audience before monetisation.
 
 | Publication | Curated by AI? | Interactive? | Depth | Cadence |
 |-------------|---------------|-------------|-------|---------|
-| **Neural Chronicals** | ✅ Yes | ✅ Yes | Deep | Monthly |
+| **Neural Chronicles** | ✅ Yes | ✅ Yes | Deep | Monthly |
 | MIT Technology Review | ❌ No | Partial | Deep | Weekly |
 | The Rundown AI | ❌ No | ❌ No | Surface | Daily |
 | Import AI | ❌ No | ❌ No | Deep | Weekly |
 | TLDR AI | ❌ No | ❌ No | Surface | Daily |
 
-**Neural Chronicals is the only AI-native, AI-curated long-form digital magazine in this space.**
+**Neural Chronicles is the only AI-native, AI-curated long-form digital magazine in this space.**
 
 ---
 
@@ -171,7 +171,7 @@ Building AI agent systems for content intelligence and publishing automation.
 
 - Kindred AI agent infrastructure — autonomous research and editorial curation
 - Cleave360 — technology and product development
-- Contact: `team@neural-chronicals.uk`
+- Contact: `team@neural-chronicles.uk`
 
 *Team bios and advisor profiles available on request.*
 
@@ -179,7 +179,7 @@ Building AI agent systems for content intelligence and publishing automation.
 
 ## 12 — The Ask
 
-Neural Chronicals is seeking **strategic partners, sponsors, and early investors** to accelerate the 12-issue arc and scale the Kindred AI curation platform.
+Neural Chronicles is seeking **strategic partners, sponsors, and early investors** to accelerate the 12-issue arc and scale the Kindred AI curation platform.
 
 ### What we need:
 - **Content partners**: AI labs, research institutions, hardware companies with stories to tell
@@ -196,7 +196,7 @@ Neural Chronicals is seeking **strategic partners, sponsors, and early investors
 
 ## 13 — Traction
 
-- ✅ Issue 01 live at [neural-chronicals.uk](https://neural-chronicals.uk)
+- ✅ Issue 01 live at [neural-chronicles.uk](https://neural-chronicles.uk)
 - ✅ Custom domain, HTTPS, global CDN ([Cloudflare](https://cloudflare.com))
 - ✅ Full 12-issue editorial roadmap defined
 - ✅ Kindred AI curation pipeline operational
@@ -207,11 +207,11 @@ Neural Chronicals is seeking **strategic partners, sponsors, and early investors
 
 ## 14 — Next Steps
 
-1. **Read Issue 01** → [neural-chronicals.uk](https://neural-chronicals.uk)
-2. **Get in touch** → [team@neural-chronicals.uk](mailto:team@neural-chronicals.uk)
+1. **Read Issue 01** → [neural-chronicles.uk](https://neural-chronicles.uk)
+2. **Get in touch** → [team@neural-chronicles.uk](mailto:team@neural-chronicles.uk)
 3. **Follow the build** → [github.com/Cleave360/neural-chronicals](https://github.com/Cleave360/neural-chronicals)
 
 ---
 
-*Neural Chronicals is produced by Kindred AI in association with Kindred Systems and Cleave360.*
-*© 2026 Neural Chronicals. All rights reserved.*
+*Neural Chronicles is produced by Kindred AI in association with Kindred Systems and Cleave360.*
+*© 2026 Neural Chronicles. All rights reserved.*

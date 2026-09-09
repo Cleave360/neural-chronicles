@@ -43,8 +43,8 @@ Use this checklist when moving from the default `pages.dev` hostname to your pub
 
 This repository now includes explicit custom domain bindings in `wrangler.toml` for:
 
-- `neural-chronicals.uk`
-- `www.neural-chronicals.uk`
+- `neural-chronicles.uk`
+- `www.neural-chronicles.uk`
 
 1. Open the Cloudflare Pages project and add the desired custom domain.
 2. If the domain is already on Cloudflare DNS, let Pages create the required DNS record automatically.

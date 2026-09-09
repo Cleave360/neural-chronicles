@@ -17,9 +17,14 @@ import {
   Globe,
   Shield,
   TrendingUp,
-  Microchip
+  Microchip,
+  ArrowLeft,
+  Clock,
+  Menu,
+  X
 } from 'lucide-react';
 import './App.css';
+import { issue02Articles, type IssueArticle } from './content/issue02';
 
 // Navigation Component
 function Navigation() {
@@ -103,7 +108,7 @@ function HeroSection() {
         <h1 className="font-display font-black text-6xl md:text-8xl lg:text-9xl mb-6 leading-none">
           <span className="gradient-text text-glow">NEURAL</span>
           <br />
-          <span className="text-white">CHRONICLE</span>
+          <span className="text-white">CHRONICLES</span>
         </h1>
         
         <p className="text-xl md:text-2xl text-gray-200 mb-4 font-medium">
@@ -782,7 +787,7 @@ function Footer() {
 }
 
 // Main App
-function App() {
+function IssueOnePage() {
   return (
     <div className="min-h-screen bg-void noise">
       <Navigation />
@@ -799,6 +804,73 @@ function App() {
       <Footer />
     </div>
   );
+}
+
+function SiteLink({ href, children, className = '' }: { href: string; children: React.ReactNode; className?: string }) {
+  const navigate = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || href.startsWith('http')) return;
+    event.preventDefault();
+    window.history.pushState({}, '', href);
+    window.dispatchEvent(new PopStateEvent('popstate'));
+  };
+  return <a href={href} onClick={navigate} className={className}>{children}</a>;
+}
+
+function PublicationHeader() {
+  const [menuOpen, setMenuOpen] = useState(false);
+  return (
+    <header className="sticky top-0 z-50 border-b border-white/10 bg-[#07070b]/90 backdrop-blur-xl">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
+        <SiteLink href="/" className="group">
+          <span className="block text-[10px] font-semibold uppercase tracking-[0.34em] text-purple-300">Independent AI journal</span>
+          <span className="font-display text-lg font-bold text-white group-hover:text-purple-200">Neural Chronicles</span>
+        </SiteLink>
+        <nav className="hidden items-center gap-7 text-sm text-white/70 md:flex" aria-label="Primary navigation">
+          <SiteLink href="/" className="hover:text-white">Current issue</SiteLink>
+          <SiteLink href="/issues" className="hover:text-white">Past issues</SiteLink>
+          <a href="mailto:team@neural-chronicles.uk" className="hover:text-white">Contact</a>
+        </nav>
+        <button onClick={() => setMenuOpen(!menuOpen)} className="rounded-lg p-2 text-white md:hidden" aria-label="Toggle menu">{menuOpen ? <X /> : <Menu />}</button>
+      </div>
+      {menuOpen && <nav className="border-t border-white/10 px-5 py-4 text-sm text-white/80 md:hidden"><SiteLink href="/" className="block py-2">Current issue</SiteLink><SiteLink href="/issues" className="block py-2">Past issues</SiteLink><a href="mailto:team@neural-chronicles.uk" className="block py-2">Contact</a></nav>}
+    </header>
+  );
+}
+
+function PublicationFooter() {
+  return <footer className="border-t border-white/10 bg-black px-5 py-10 text-sm text-white/50"><div className="mx-auto flex max-w-7xl flex-col gap-3 sm:flex-row sm:items-end sm:justify-between"><div><p className="font-display text-xl font-bold text-white">Neural Chronicles</p><p>Signal, systems and the people building what comes next.</p></div><p>© {new Date().getFullYear()} Neural Chronicles · <a className="hover:text-white" href="mailto:team@neural-chronicles.uk">team@neural-chronicles.uk</a></p></div></footer>;
+}
+
+function Issue02Card({ article }: { article: IssueArticle }) {
+  return <article className="group overflow-hidden rounded-2xl border border-white/10 bg-white/[0.035]"><div className="aspect-[16/9] overflow-hidden"><img src={article.image} alt="" className="h-full w-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" /></div><div className="p-6"><p className="text-xs font-semibold uppercase tracking-[0.22em] text-purple-300">{article.section}</p><h2 className="mt-3 font-display text-2xl font-bold leading-tight text-white">{article.title}</h2><p className="mt-3 leading-relaxed text-white/65">{article.dek}</p><div className="mt-5 flex items-center justify-between gap-4 border-t border-white/10 pt-4 text-sm"><span className="flex items-center gap-2 text-white/45"><Clock className="h-4 w-4" />{article.readTime}</span><SiteLink href={`/issues/02/articles/${article.slug}`} className="flex items-center gap-2 font-semibold text-purple-300 hover:text-purple-200">Read full article <ArrowRight className="h-4 w-4" /></SiteLink></div></div></article>;
+}
+
+function Issue02Home() {
+  return <><section className="relative min-h-[78vh] overflow-hidden border-b border-white/10"><img src="/hero-agentic.jpg" alt="Issue 02 cover artwork" className="absolute inset-0 h-full w-full object-cover" /><div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-black/25" /><div className="relative mx-auto flex min-h-[78vh] max-w-7xl items-center px-5 py-20 lg:px-8"><div className="max-w-3xl"><p className="text-xs font-semibold uppercase tracking-[0.3em] text-purple-300">Current issue · September 2026</p><h1 className="mt-5 font-display text-5xl font-black leading-[0.95] text-white sm:text-7xl lg:text-8xl">The Agentic<br /><span className="gradient-text">Turn</span></h1><p className="mt-7 max-w-2xl text-lg leading-relaxed text-white/75 sm:text-xl">From chat to choreography: systems that plan, use tools, ask for permission and leave traces.</p><div className="mt-8 flex flex-wrap gap-3"><a href="#stories" className="rounded-full bg-white px-6 py-3 text-sm font-bold text-black hover:bg-purple-200">Explore Issue 02</a><SiteLink href="/issues" className="rounded-full border border-white/25 px-6 py-3 text-sm font-semibold text-white hover:border-white/60">Browse past issues</SiteLink></div></div></div><a href="#stories" aria-label="Scroll to stories" className="absolute bottom-7 left-1/2 -translate-x-1/2 text-white/60"><ChevronDown className="animate-bounce" /></a></section><section className="border-b border-amber-300/20 bg-amber-300/[0.06] px-5 py-4 text-sm text-amber-100/80"><p className="mx-auto max-w-7xl"><strong className="text-amber-100">From the archive desk:</strong> Issue 02 was developed from an April–July 2026 editorial packet and published in September 2026. Time-sensitive claims are presented as a record of that period.</p></section><section id="stories" className="mx-auto max-w-7xl px-5 py-20 lg:px-8"><div className="mb-10"><p className="text-xs font-semibold uppercase tracking-[0.28em] text-purple-300">Issue 02</p><h2 className="mt-3 font-display text-4xl font-black text-white">Six views of agency</h2><p className="mt-3 max-w-2xl text-white/50">Signal → builders → infrastructure → production → imagination → visual culture.</p></div><div className="grid gap-6 md:grid-cols-2">{issue02Articles.map((article) => <Issue02Card key={article.slug} article={article} />)}</div></section></>;
+}
+
+function FullArticle({ article }: { article: IssueArticle }) {
+  return <article className="min-w-0 overflow-x-hidden"><div className="relative h-[48vh] min-h-[390px] overflow-hidden border-b border-white/10"><img src={article.image} alt="" className="absolute inset-0 h-full w-full object-cover" /><div className="absolute inset-0 bg-gradient-to-t from-[#07070b] via-black/65 to-black/20" /><div className="relative mx-auto flex h-full min-w-0 max-w-4xl flex-col justify-end px-5 pb-12 lg:px-8"><p className="text-xs font-semibold uppercase tracking-[0.25em] text-purple-300">{article.section} · Issue 02</p><h1 className="mt-4 break-words font-display text-4xl font-black leading-tight text-white sm:text-6xl">{article.title}</h1><p className="mt-4 max-w-3xl text-lg leading-relaxed text-white/70">{article.dek}</p></div></div><div className="mx-auto min-w-0 max-w-3xl px-5 py-14 lg:px-8"><div className="mb-9 flex flex-wrap items-center gap-5 border-b border-white/10 pb-6 text-sm text-white/45"><span className="flex items-center gap-2"><Calendar className="h-4 w-4" />September 2026</span><span className="flex items-center gap-2"><Clock className="h-4 w-4" />{article.readTime}</span></div><div className="article-body">{article.paragraphs.map((paragraph, index) => <p key={index}>{paragraph}</p>)}</div>{article.takeaways && <aside className="mt-10 rounded-2xl border border-purple-400/20 bg-purple-400/[0.06] p-6"><h2 className="font-display text-xl font-bold text-white">Field notes</h2><ul className="mt-4 space-y-3 text-white/70">{article.takeaways.map((item) => <li key={item} className="flex gap-3"><span className="text-purple-300">→</span>{item}</li>)}</ul></aside>}{article.sources && <section className="mt-10 border-t border-white/10 pt-7"><h2 className="font-display text-lg font-bold text-white">Sources and further reading</h2><ul className="mt-4 space-y-2 text-sm">{article.sources.map((source) => <li key={source.label}><a href={source.url} target={source.url.startsWith('http') ? '_blank' : undefined} rel="noreferrer" className="break-words text-purple-300 underline decoration-purple-300/30 underline-offset-4 hover:text-purple-200">{source.label}</a></li>)}</ul><p className="mt-5 text-xs leading-relaxed text-white/40">This is a time-stamped editorial issue. Sources support its reporting context; they do not make older market figures current.</p></section>}<SiteLink href="/issues/02" className="mt-12 inline-flex items-center gap-2 text-sm font-semibold text-purple-300"><ArrowLeft className="h-4 w-4" />Back to Issue 02</SiteLink></div></article>;
+}
+
+function IssuesArchive() {
+  return <section className="mx-auto min-h-[70vh] max-w-6xl px-5 py-20 lg:px-8"><p className="text-xs font-semibold uppercase tracking-[0.28em] text-purple-300">The archive</p><h1 className="mt-4 font-display text-5xl font-black text-white">Past issues</h1><p className="mt-4 max-w-2xl text-lg text-white/60">Every edition of Neural Chronicles, preserved as a record of its publication moment.</p><div className="mt-12 grid gap-6 md:grid-cols-2"><SiteLink href="/issues/02" className="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03]"><img src="/hero-agentic.jpg" alt="" className="aspect-[16/8] w-full object-cover" /><div className="p-6"><p className="text-xs uppercase tracking-[0.22em] text-purple-300">Current · September 2026</p><h2 className="mt-3 font-display text-3xl font-bold text-white">Issue 02: The Agentic Turn</h2></div></SiteLink><SiteLink href="/issues/01" className="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03]"><img src="/hero-bg.jpg" alt="" className="aspect-[16/8] w-full object-cover" /><div className="p-6"><p className="text-xs uppercase tracking-[0.22em] text-purple-300">Past · March 2026</p><h2 className="mt-3 font-display text-3xl font-bold text-white">Issue 01: The Inaugural Edition</h2></div></SiteLink></div></section>;
+}
+
+function NotFound() { return <section className="mx-auto min-h-[70vh] max-w-4xl px-5 py-24 text-center"><p className="text-purple-300">404</p><h1 className="mt-3 font-display text-5xl font-black text-white">That page slipped beyond the context window.</h1><SiteLink href="/" className="mt-8 inline-flex items-center gap-2 text-purple-300"><ArrowLeft className="h-4 w-4" />Return home</SiteLink></section>; }
+
+function App() {
+  const [path, setPath] = useState(window.location.pathname);
+  useEffect(() => { const update = () => { setPath(window.location.pathname); window.scrollTo({ top: 0, behavior: 'instant' }); }; window.addEventListener('popstate', update); return () => window.removeEventListener('popstate', update); }, []);
+  const match = path.match(/^\/issues\/02\/articles\/([^/]+)\/?$/);
+  const article = match ? issue02Articles.find((item) => item.slug === match[1]) : undefined;
+  let page: React.ReactNode = <NotFound />;
+  if (path === '/' || path === '/issues/02' || path === '/issues/02/') page = <Issue02Home />;
+  else if (path === '/issues' || path === '/issues/') page = <IssuesArchive />;
+  else if (path === '/issues/01' || path === '/issues/01/') page = <IssueOnePage />;
+  else if (article) page = <FullArticle article={article} />;
+  if (path === '/issues/01' || path === '/issues/01/') return <IssueOnePage />;
+  return <div className="min-h-screen bg-[#07070b] text-white"><PublicationHeader /><main>{page}</main><PublicationFooter /></div>;
 }
 
 export default App;

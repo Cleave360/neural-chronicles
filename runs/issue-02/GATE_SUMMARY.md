@@ -1,6 +1,10 @@
-# Issue 02 Discovery Gate Summary
+# Issue 02 Release Gate Summary
 
-**Gate Status**: ✓ READY FOR PARALLEL DRAFTING PHASE
+**Gate Status**: READY FOR DEPLOYMENT VERIFICATION
+
+The original April discovery gate has been superseded by the September 2026
+release candidate. Issue 02 is deliberately published as a time-stamped
+editorial edition rather than represented as current reporting.
 
 ## Seed Artifacts Created
 
@@ -14,20 +18,25 @@
 ✓ `40-build/handoff-build-to-qa.json.template` — Build → QA contract  
 ✓ `50-qa/qa-checklist.md` — Publication readiness checklist
 
-## Next Steps
+## Release candidate evidence
 
-**Immediate (Week 1)**: 
-1. Run nc-content-editor and nc-distribution-strategist in parallel off the shared brief 
-2. Have each produce their respective 10-editorial/* and 20-distribution/* outputs
-3. Use the handoff templates to formalize the contracts
+- Canonical deploy surface: `app/`
+- Full article routes: six of six implemented
+- Editorial packets: `articles/issue-02/`
+- Selected imagery: `issue_2/Kimi_Agent/issue-02-assets/`
+- Production build: passed on 9 September 2026
+- ESLint: passed with zero errors and seven existing Fast Refresh warnings
+- Local route smoke: all issue, archive, and article routes returned HTTP 200
+- External links, Cloudflare deploy, DNS, SSL, and production rendering: not yet verified
 
-**Success Criteria for Week 1**:
-- Editorial outline complete with all 6 sections defined
-- Distribution strategy includes 3+ channels with cadence plan
-- Both roles have <3 open questions remaining
-- Ready for Alignment Gate on end of week 1
+## Publication boundary
+
+The original Agentic As A Service claims ledger retains two unresolved metrics.
+Those metrics were omitted from the web adaptation. The release must not restore
+them without primary attribution. Video production remains a later distribution
+workstream and is not a website launch dependency.
 
 ---
 
-*Seeded: 18 April 2026*  
-*Next Review: 22 April 2026 (Alignment Gate)*
+*Discovery seeded: 18 April 2026*
+*Release candidate verified locally: 9 September 2026*

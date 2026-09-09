@@ -1,19 +1,19 @@
-# Neural Chronicals
+# Neural Chronicles
 
-Neural Chronicals is a monthly digital magazine focused on AI, agentic AI, and AI systems.
+Neural Chronicles is a monthly digital magazine focused on AI, agentic AI, and AI systems.
 
 This repository is the root project workspace for:
 - The live publication site in `app/`
 - Multi-agent handoff and run artifacts
-- Issue research packages and media assets
+- Issue research packages and selected publication media
 - Cloudflare deployment configuration
 
 ## Repository Structure
 
-- `app/` - Main publication web app (React + Vite + TypeScript)
-- `app_2/` - Template copy for future publication experiments
-- `issue_2/` - Issue 02 research package, Kimi artifacts, and data tables
-- `runs/` - Publication gate artifacts and coordination handoffs (tracked for audit trail)
+- `app/` - Deployable publication app; Issue 02 is current and Issue 01 is archived
+- `articles/issue-02/` - Full Issue 02 editorial packets and attribution
+- `issue_2/Kimi_Agent/issue-02-assets/` - Selected Issue 02 source imagery
+- `runs/issue-02/` - Issue 02 release evidence and coordination handoffs
 - `security/` - Security notes and workflow snippets
 - `handoff.md` - Cross-agent coordination log (append-only)
 - `wrangler.toml` - Cloudflare Workers deployment config
@@ -37,7 +37,7 @@ Default local dev URL is `http://localhost:5190`.
 
 ## Deployment
 
-Production deployment is configured at the repository root and uses Cloudflare Workers with static assets from `app/dist`.
+Production deployment is configured at the repository root and uses Cloudflare Workers with static assets from `app/dist` at `neural-chronicles.uk`.
 
 - Build output: `app/dist`
 - Deploy config: `wrangler.toml`

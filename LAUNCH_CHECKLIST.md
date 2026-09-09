@@ -1,6 +1,6 @@
-# Neural Chronicals Launch Checklist
+# Neural Chronicles Launch Checklist
 
-Use this checklist on publication day for `neural-chronicals.uk`.
+Use this checklist on publication day for `neural-chronicles.uk`.
 
 ## 1) Pre-Deploy Local Validation
 
@@ -40,7 +40,7 @@ Then in Cloudflare Pages:
 
 In Cloudflare Pages custom domains:
 
-1. Confirm `neural-chronicals.uk` is active.
+1. Confirm `neural-chronicles.uk` is active.
 2. If using `www`, verify redirect behavior is intentional.
 3. Confirm HTTPS certificate status is active.
 
@@ -48,25 +48,25 @@ In Cloudflare Pages custom domains:
 
 Check in a browser:
 
-1. `https://neural-chronicals.uk/` loads.
+1. `https://neural-chronicles.uk/` loads.
 2. Hero, section navigation, and footer load correctly.
 3. Contact email link opens mail client:
-- `mailto:team@neural-chronicals.uk`
+- `mailto:team@neural-chronicles.uk`
 4. Mobile and desktop layouts are both acceptable.
 
 Optional command checks:
 
 ```bash
-curl -I https://neural-chronicals.uk/
-curl -I https://neural-chronicals.uk/assets/
+curl -I https://neural-chronicles.uk/
+curl -I https://neural-chronicles.uk/assets/
 ```
 
 ## 5) Metadata And Preview Validation
 
 Confirm page source includes:
 
-- `<title>Neural Chronicals</title>`
-- canonical URL to `https://neural-chronicals.uk/`
+- `<title>Neural Chronicles</title>`
+- canonical URL to `https://neural-chronicles.uk/`
 - Open Graph tags
 - Twitter card tags
 
@@ -93,6 +93,6 @@ If a release breaks production:
 Before announcement, confirm:
 
 1. No placeholder links remain.
-2. Publication branding matches domain: `Neural Chronicals`.
-3. Contact email is visible and correct: `team@neural-chronicals.uk`.
+2. Publication branding matches domain: `Neural Chronicles`.
+3. Contact email is visible and correct: `team@neural-chronicles.uk`.
 4. Site is reachable from a mobile device on cellular network.

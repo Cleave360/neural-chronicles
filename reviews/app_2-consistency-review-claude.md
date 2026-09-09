@@ -17,13 +17,13 @@ believing it's the next issue. The real Issue 02 candidate in
 ## Consistency findings (ordered by severity)
 
 1. **Brand-name schism (site-wide).** Three spellings coexist:
-   `NEURAL CHRONICALS` (app_2 nav, footer), `NEURAL CHRONICLE` (app_2 hero
+   `NEURAL CHRONICLES` (app_2 nav, footer), `NEURAL CHRONICLE` (app_2 hero
    H1, singular), and `Neural Chronicles` (recent Issue 01 fix, commit
-   8e890fa). The domain itself is `neural-chronicals.uk` while the team
+   8e890fa). The domain itself is `neural-chronicles.uk` while the team
    writes "neural-chronicles.uk" in conversation. **Decision needed:** pick
    one canonical spelling (recommend *Neural Chronicles*, matching the
    commit direction), register/redirect the -chronicles.uk domain if
-   available, and keep -chronicals.uk 301-redirecting. Then sweep all
+   available, and keep the former domain 301-redirecting. Then sweep all
    three apps + pitch deck + wrangler.toml comments in one commit.
 
 2. **Stale issue identity in app_2.** Hero reads "March 2026 | Inaugural

@@ -1,5 +1,26 @@
 /* App-specific styles */
 
+.article-body {
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 1.075rem;
+  line-height: 1.9;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.article-body p + p { margin-top: 1.6rem; }
+.article-body p { white-space: pre-line; }
+
+.article-body p:first-child::first-letter {
+  float: left;
+  margin: 0.1rem 0.55rem 0 0;
+  color: #c4b5fd;
+  font-family: 'Exo', sans-serif;
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 0.82;
+}
+
 /* Smooth scroll behavior */
 html {
   scroll-behavior: smooth;

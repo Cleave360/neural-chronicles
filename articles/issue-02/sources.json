@@ -1,0 +1,39 @@
+{
+  "issue": "02",
+  "title": "The Agentic Turn",
+  "published": "2026-09",
+  "editorial_window": "2026-04 through 2026-07",
+  "articles": [
+    {
+      "slug": "the-agentic-wave",
+      "sources": [
+        { "title": "AI Risk Management Framework", "publisher": "NIST", "url": "https://www.nist.gov/itl/ai-risk-management-framework", "tier": "A" },
+        { "title": "Agentic LLMs: A Survey", "publisher": "arXiv", "url": "https://arxiv.org/abs/2503.23037", "tier": "A" }
+      ]
+    },
+    {
+      "slug": "architects-of-the-agentic-stack",
+      "sources": [
+        { "title": "Research", "publisher": "Anthropic", "url": "https://www.anthropic.com/research", "tier": "A" },
+        { "title": "AI documentation", "publisher": "Microsoft", "url": "https://learn.microsoft.com/ai/", "tier": "A" },
+        { "title": "Agentforce", "publisher": "Salesforce", "url": "https://www.salesforce.com/agentforce/", "tier": "B" }
+      ]
+    },
+    {
+      "slug": "trust-becomes-an-api",
+      "sources": [
+        { "title": "Model Context Protocol", "publisher": "MCP", "url": "https://modelcontextprotocol.io/", "tier": "A" },
+        { "title": "Proof-of-Guardrail", "publisher": "arXiv", "url": "https://arxiv.org/abs/2603.05786", "tier": "A" },
+        { "title": "Efficient Benchmarking of AI Agents", "publisher": "arXiv", "url": "https://arxiv.org/abs/2603.23749", "tier": "A" },
+        { "title": "Enterprise-Grade Security for MCP", "publisher": "arXiv", "url": "https://arxiv.org/abs/2504.08623", "tier": "A" }
+      ]
+    },
+    {
+      "slug": "the-employee-who-isnt",
+      "ledger": "agentic-as-a-service/sources.json",
+      "publication_note": "Unresolved quantitative claims in the source draft were omitted from the web adaptation."
+    },
+    { "slug": "the-agentic-muse", "sources": [], "type": "creative" },
+    { "slug": "anatomy-of-agency", "sources": [], "type": "visual-essay" }
+  ]
+}
