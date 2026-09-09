@@ -523,3 +523,22 @@ Signed: codex — Issue 02 release implementation
   lodash advisory through Recharts. The compatible lockfile fix was applied;
   the production audit now reports zero vulnerabilities. Development-only
   dependencies still report 13 advisories and should be handled separately.
+
+## 09/09/2026 — Agent-readable publication and Issue 03 brief
+
+- Issue 02 now produces complete initial HTML and Markdown alternatives for all
+  six articles from the same canonical TypeScript content source.
+- Discovery surfaces generated at build time: `/llms.txt`, `/llms-full.txt`,
+  `/sitemap.xml`, `/feed.xml`, `/robots.txt`, per-article `.md`, canonical links,
+  Markdown alternates and Schema.org JSON-LD.
+- Origin policy permits search and real-time AI input with reference use, while
+  reserving model-training rights: `search=yes, ai-input=yes, ai-train=no,
+  use=reference`.
+- Local proof: build passed, production dependency audit returned zero
+  vulnerabilities, both XML documents parsed, and HTML/Markdown pairs existed
+  for six of six articles.
+- `EDITORIAL_ROADMAP.md` now contains the revised 12-issue arc. Issue 03 is
+  scaffolded under `runs/issue-03/00-brief/` as **The Context We Keep**, with
+  six working headlines and source/publication gates.
+
+Signed: codex — agent publishing and Issue 03 planning

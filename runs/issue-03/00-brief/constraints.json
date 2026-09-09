@@ -1,0 +1,36 @@
+{
+  "issue": "03",
+  "theme": "Models & Memory",
+  "working_title": "The Context We Keep",
+  "target": "2026-10",
+  "status": "discovery_brief",
+  "required_sections": [
+    "The Latest Pulse",
+    "Architects of Tomorrow",
+    "Silicon & Soul",
+    "Agentic As A Service",
+    "Synthetic Verse",
+    "Visual Showcase"
+  ],
+  "required_distinctions": [
+    "model_context",
+    "retrieved_knowledge",
+    "persistent_agent_state",
+    "system_of_record"
+  ],
+  "source_integrity": {
+    "allowlist_required": true,
+    "claim_ledger_required": true,
+    "primary_sources_preferred": true,
+    "unresolved_critical_claims_allowed_at_publish": false
+  },
+  "publication_outputs": [
+    "browser_html",
+    "prerendered_html",
+    "markdown",
+    "json_ld",
+    "sitemap",
+    "feed",
+    "llms_txt"
+  ]
+}

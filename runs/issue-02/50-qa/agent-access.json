@@ -1,0 +1,27 @@
+{
+  "issue": "02",
+  "verified_at": "2026-09-09",
+  "status": "ready_for_deploy",
+  "policy": {
+    "search": "yes",
+    "ai_input": "yes",
+    "ai_train": "no",
+    "use": "reference"
+  },
+  "checks": {
+    "prerendered_article_html": "passed_6_of_6",
+    "markdown_alternatives": "passed_6_of_6",
+    "markdown_mime_type": "text/markdown",
+    "llms_txt": "passed",
+    "llms_full_txt": "passed",
+    "sitemap_xml": "passed",
+    "rss_xml": "passed",
+    "json_ld": "passed",
+    "canonical_links": "passed",
+    "content_signal_origin_header": "configured"
+  },
+  "limits": [
+    "Live Cloudflare behaviour must be rechecked after deployment.",
+    "Content Signals communicate rights and can be enforced selectively through Cloudflare AI Crawl Control; they do not compel every external crawler to comply."
+  ]
+}

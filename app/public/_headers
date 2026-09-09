@@ -1,4 +1,6 @@
 /*
+  Content-Signal: search=yes, ai-input=yes, ai-train=no, use=reference
+  Link: </llms.txt>; rel="describedby"
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
   Referrer-Policy: strict-origin-when-cross-origin

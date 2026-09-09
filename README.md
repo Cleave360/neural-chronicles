@@ -14,6 +14,9 @@ This repository is the root project workspace for:
 - `articles/issue-02/` - Full Issue 02 editorial packets and attribution
 - `issue_2/Kimi_Agent/issue-02-assets/` - Selected Issue 02 source imagery
 - `runs/issue-02/` - Issue 02 release evidence and coordination handoffs
+- `runs/issue-03/` - Issue 03 discovery brief and constraints
+- `EDITORIAL_ROADMAP.md` - The 12-issue thematic and publication roadmap
+- `docs/AGENT_ACCESS.md` - Agent discovery formats and content-use policy
 - `security/` - Security notes and workflow snippets
 - `handoff.md` - Cross-agent coordination log (append-only)
 - `wrangler.toml` - Cloudflare Workers deployment config
