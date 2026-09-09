@@ -3,7 +3,11 @@
 **Theme:** Models & Memory<br>
 **Working title:** The Context We Keep<br>
 **Target:** October 2026<br>
-**Status:** Discovery brief<br>
+**Status:** Research active<br>
+
+Research packet: [`../10-research/research-map.md`](../10-research/research-map.md)<br>
+Proposed source gate: [`../10-research/source-allowlist.md`](../10-research/source-allowlist.md)<br>
+Visual pipeline inventory: [`../20-visual/comfyui-inventory.md`](../20-visual/comfyui-inventory.md)
 
 ## Editorial thesis
 

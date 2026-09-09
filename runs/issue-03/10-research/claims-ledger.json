@@ -1,0 +1,88 @@
+{
+  "issue": "03",
+  "as_of": "2026-09-09",
+  "status": "initial_research",
+  "publication_rule": "No critical claim may remain unresolved at publication.",
+  "claims": [
+    {
+      "id": "C03-001",
+      "article": "The Context Window Is Not a Memory",
+      "claim": "A model's nominal context capacity does not guarantee that it will use relevant information equally well at every position.",
+      "sources": ["S02"],
+      "state": "supported_primary",
+      "limits": "Evidence is task- and model-specific; avoid universal performance claims."
+    },
+    {
+      "id": "C03-002",
+      "article": "The Context Window Is Not a Memory",
+      "claim": "The better choice between long context and retrieval depends on the model, task, context length and retrieved material rather than one method universally dominating.",
+      "sources": ["S03"],
+      "state": "provisional_full_text_required",
+      "limits": "Confirm benchmark design, tested models and per-task results."
+    },
+    {
+      "id": "C03-003",
+      "article": "The Context Window Is Not a Memory",
+      "claim": "Retrieval-augmented generation combines model parameters with externally retrieved non-parametric material.",
+      "sources": ["S01"],
+      "state": "supported_primary",
+      "limits": "Foundational formulation; modern systems vary."
+    },
+    {
+      "id": "C03-004",
+      "article": "The Memory Builders",
+      "claim": "Agent-memory evaluation increasingly includes updating, selective forgetting and long-range interaction, not only retrieval of static facts.",
+      "sources": ["S07", "S08", "S10"],
+      "state": "provisional_full_text_required",
+      "limits": "This is a synthesis across benchmark definitions, not a claim that the benchmarks are equivalent."
+    },
+    {
+      "id": "C03-005",
+      "article": "The Memory Builders",
+      "claim": "Remembering a constraint and correctly applying it to a later tool action are different evaluation targets.",
+      "sources": ["S09"],
+      "state": "supported_primary",
+      "limits": "Mem2ActBench uses a synthetic construction and a bounded set of frameworks."
+    },
+    {
+      "id": "C03-006",
+      "article": "What Should a Machine Be Allowed to Remember?",
+      "claim": "European data-protection law includes accuracy and storage-limitation principles, a right to erasure under specified grounds and exceptions, and notification duties for certain downstream recipients.",
+      "sources": ["S13"],
+      "state": "supported_primary_legal_review_required",
+      "limits": "Do not offer case-specific legal advice; jurisdiction, role and exceptions matter."
+    },
+    {
+      "id": "C03-007",
+      "article": "What Should a Machine Be Allowed to Remember?",
+      "claim": "Whether an AI model can be considered anonymous requires case-by-case assessment; a bare claim that a model is anonymous is insufficient.",
+      "sources": ["S14"],
+      "state": "provisional_full_text_required",
+      "limits": "EDPB Opinion 28/2024 addresses models resulting from training with personal data."
+    },
+    {
+      "id": "C03-008",
+      "article": "What Should a Machine Be Allowed to Remember?",
+      "claim": "A responsible memory design needs a justified retention policy and periodic review, not indefinite storage by default.",
+      "sources": ["S13", "S15"],
+      "state": "supported_primary_legal_review_required",
+      "limits": "Translate principles into product design only with clear role and purpose assumptions."
+    },
+    {
+      "id": "C03-009",
+      "article": "Payroll Is Context",
+      "claim": "Persistent agent state should remain a derivative operational aid rather than silently replacing an authoritative business system.",
+      "sources": [],
+      "state": "editorial_thesis_needs_reporting",
+      "limits": "Requires practitioner interviews and concrete system architecture evidence."
+    },
+    {
+      "id": "C03-010",
+      "article": "The Architecture of Recall",
+      "claim": "Deleting or correcting a source record does not by itself prove deletion or correction of chunks, embeddings, summaries, graph edges, caches and backups derived from it.",
+      "sources": ["S13", "S15"],
+      "state": "technical_validation_required",
+      "limits": "Validate against named architectures; do not present every listed derivative as universal."
+    }
+  ]
+}
