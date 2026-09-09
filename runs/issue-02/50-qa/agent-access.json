@@ -1,7 +1,8 @@
 {
   "issue": "02",
   "verified_at": "2026-09-09",
-  "status": "ready_for_deploy",
+  "status": "deployed",
+  "cloudflare_version": "6145139e-3a90-4f6e-bfda-b5997aeeb391",
   "policy": {
     "search": "yes",
     "ai_input": "yes",
@@ -18,10 +19,12 @@
     "rss_xml": "passed",
     "json_ld": "passed",
     "canonical_links": "passed",
-    "content_signal_origin_header": "configured"
+    "content_signal_origin_header": "passed_live",
+    "live_prerendered_article": "passed",
+    "live_markdown_article": "passed",
+    "live_discovery_endpoints": "passed_5_of_5"
   },
   "limits": [
-    "Live Cloudflare behaviour must be rechecked after deployment.",
     "Content Signals communicate rights and can be enforced selectively through Cloudflare AI Crawl Control; they do not compel every external crawler to comply."
   ]
 }

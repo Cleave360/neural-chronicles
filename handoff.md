@@ -542,3 +542,15 @@ Signed: codex — Issue 02 release implementation
   six working headlines and source/publication gates.
 
 Signed: codex — agent publishing and Issue 03 planning
+
+### Agent-access deployment completion
+
+- Commit `85f588a` was pushed and deployed as Cloudflare version
+  `6145139e-3a90-4f6e-bfda-b5997aeeb391`.
+- Live checks returned HTTP 200 for `llms.txt`, `llms-full.txt`, `robots.txt`,
+  sitemap, RSS, prerendered article HTML and article Markdown.
+- The clean article URL redirected to its canonical trailing-slash URL. A raw
+  HTTP fetch contained full prose without JavaScript. The Markdown alternative
+  returned `text/markdown`.
+- Live responses carried the `llms.txt` discovery link and the intended
+  `Content-Signal` policy.
