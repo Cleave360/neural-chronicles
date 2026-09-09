@@ -1,7 +1,7 @@
 {
   "issue": "02",
   "title": "The Agentic Turn",
-  "status": "ready_for_deployment_verification",
+  "status": "deployed",
   "verified_at": "2026-09-09",
   "deploy_surface": "app",
   "domain": "neural-chronicles.uk",
@@ -11,9 +11,12 @@
     "eslint_warnings": 7,
     "full_article_routes": 6,
     "local_route_http_200": 10,
+    "production_dependency_audit": "passed_zero_vulnerabilities",
     "external_links": "not_verified",
-    "cloudflare_deployment": "not_verified",
-    "production_dns_ssl": "not_verified",
+    "cloudflare_deployment": "passed_version_66c10dbb-9f24-4a2a-abfb-89b715c3fb04",
+    "production_dns_ssl": "passed_apex_and_www_http_200",
+    "production_rendered_home": "passed",
+    "production_rendered_deep_article": "passed",
     "visual_desktop_1200x750": "passed",
     "visual_narrow_500x844": "passed",
     "visual_320_390": "not_verified"
