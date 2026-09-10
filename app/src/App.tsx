@@ -754,15 +754,22 @@ function Footer() {
           <p className="text-gray-400 mb-8">The future is intelligent.</p>
           
           <div className="flex items-center gap-6 mb-12">
-            {['Twitter', 'LinkedIn', 'GitHub', 'Discord'].map((social) => (
-              <a 
-                key={social}
-                href="#"
-                className="text-gray-500 hover:text-electric-purple transition-colors"
-              >
-                {social}
-              </a>
-            ))}
+            <a
+              href="https://x.com/CleaveReality"
+              target="_blank"
+              rel="noreferrer"
+              className="text-gray-500 hover:text-electric-purple transition-colors"
+            >
+              X
+            </a>
+            <a
+              href="https://www.linkedin.com/in/geoff-lundholm"
+              target="_blank"
+              rel="noreferrer"
+              className="text-gray-500 hover:text-electric-purple transition-colors"
+            >
+              LinkedIn
+            </a>
           </div>
 
           <a
@@ -838,7 +845,7 @@ function PublicationHeader() {
 }
 
 function PublicationFooter() {
-  return <footer className="border-t border-white/10 bg-black px-5 py-10 text-sm text-white/50"><div className="mx-auto flex max-w-7xl flex-col gap-3 sm:flex-row sm:items-end sm:justify-between"><div><p className="font-display text-xl font-bold text-white">Neural Chronicles</p><p>Signal, systems and the people building what comes next.</p></div><p>© {new Date().getFullYear()} Neural Chronicles · <a className="hover:text-white" href="mailto:team@neural-chronicles.uk">team@neural-chronicles.uk</a></p></div></footer>;
+  return <footer className="border-t border-white/10 bg-black px-5 py-10 text-sm text-white/50"><div className="mx-auto flex max-w-7xl flex-col gap-5 sm:flex-row sm:items-end sm:justify-between"><div><p className="font-display text-xl font-bold text-white">Neural Chronicles</p><p>Signal, systems and the people building what comes next.</p><nav className="mt-3 flex gap-4" aria-label="Social media"><a className="hover:text-white" href="https://x.com/CleaveReality" target="_blank" rel="noreferrer">X</a><a className="hover:text-white" href="https://www.linkedin.com/in/geoff-lundholm" target="_blank" rel="noreferrer">LinkedIn</a></nav></div><p>© {new Date().getFullYear()} Neural Chronicles · <a className="hover:text-white" href="mailto:team@neural-chronicles.uk">team@neural-chronicles.uk</a></p></div></footer>;
 }
 
 function Issue02Card({ article }: { article: IssueArticle }) {
