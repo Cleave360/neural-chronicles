@@ -554,3 +554,25 @@ Signed: codex — agent publishing and Issue 03 planning
   returned `text/markdown`.
 - Live responses carried the `llms.txt` discovery link and the intended
   `Content-Signal` policy.
+
+## 10/09/2026 — Social footer, Issue 03 pre-flight review and email status
+
+- Added the supplied X (`CleaveReality`) and LinkedIn (`geoff-lundholm`) links
+  to both publication footers and removed the Issue 01 placeholder social links.
+- Build passed; ESLint returned zero errors and seven existing Fast Refresh
+  warnings. Commit `9a419d2` was pushed to `origin/main`.
+- Cloudflare Worker deployment completed as version
+  `5f89c181-78ed-4f7c-b6ee-365783960e66`; live HTTPS returned 200 and the
+  deployed JavaScript bundle contained both social destinations.
+- Public DNS had no MX or TXT records for `neural-chronicles.uk`, so the visible
+  `team@neural-chronicles.uk` address is not yet a working mailbox.
+- Zoho should be configured as the sole root-domain mail host using the exact
+  verification, MX, SPF and DKIM values from its Admin Console. Do not enable
+  Cloudflare Email Routing alongside Zoho MX records.
+- Antigravity's Issue 03 pre-flight is accepted as direction, not final gate:
+  the three images exist but contain pseudo-text; landscape is 1200×624 rather
+  than 1200×628; and the diagram needs accessibility and conceptual revisions.
+  Detailed evidence is in
+  `runs/issue-03/20-visual/antigravity-preflight-review.md`.
+
+Signed: codex — social release and Issue 03 pre-flight audit
